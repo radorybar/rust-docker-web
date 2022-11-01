@@ -1,0 +1,16 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/rust-docker-web', '.' ]
+#    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/quickstart-image', '-f', './alpine/Dockerfile', '.' ]
+#    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/quickstart-image', './alpine/Dockerfile' ]
+#    args:
+#      - build
+#      - "--tag=gcr.io/rust-docker-web/rust-docker-web"
+#      - "--file=./alpine/Dockerfile"
+#    args:
+#      - build
+#      - "--tag=gcr.io/$PROJECT_ID/quickstart-image"
+#      - "--file=./alpine/Dockerfile"
+
+images:
+  - "gcr.io/rust-docker-web/rust-docker-web"
